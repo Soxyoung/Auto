@@ -36,7 +36,7 @@ jobs:
         run: pip install -r requirements.txt
       # 运行 python 脚本文件，其中的参数取 secrets 中配置的加密参数，账户名和密码
       - name: Working
-        run: python auto_sign.py ${{ secrets.USERNAME }} ${{ secrets.PASSWORD }}
+        run: python auto_sign.py ${{ secrets.ATPAUTHTOKEN }} ${{ secrets.MOBILE }}  ${{ secrets.USERID}}  ${{ secrets.USERSIG}} ${{ secrets.ACW_TC}} ${{ secrets.CX_SIGN}}
       # 发送日志邮件
       - name: send log mail
         uses: dawidd6/action-send-mail@v2.2.2
