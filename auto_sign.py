@@ -115,6 +115,6 @@ if __name__ == '__main__':
     sign1 = sys.argv[6]
 
     # 话费够
-    hfgoSign(atpAuthToken, mobile, userId, userSig)
+    # hfgoSign(atpAuthToken, mobile, userId, userSig)
     # 公交
     sljsign(acw_tc, sign1)
