@@ -172,6 +172,57 @@ def yhsign(memberid, access_token, deviceid, sign):
     response = requests.post('https://api.' + yhhost + '.com/web/coupon/signreward/sign', headers=headers, params=params, data=data)
     print(response.text)
 
+def smzdm():
+    cookies = {
+        'r_sort_type': 'score',
+        'smzdm_user_source': '0BE459D8C6D2EADD33E283EE04413C32',
+        '_ga_271744817': 'GS1.1.1620782829.7.1.1620782830.0',
+        'device_id': '2130706433162803948641793476fa2288af10ed929e07a2046d46241b',
+        'shequ_pc_sug': 'b',
+        '__gpi': '00000000-0000-0000-0000-000000000000&c216ZG0uY29t&Lw==',
+        'homepage_sug': 'f',
+        '_ga_09SRZM2FDD': 'GS1.1.1636724126.72.1.1636724788.0',
+        '_ga': 'GA1.2.2120138638.1630632273',
+        'sess': 'AT-nLvFYHStsYzunvA%2ByyvPLsxGpZr%2B%2FMlts8jPLIeKyjeZHIhn4UxCLT7Q8n2qwYqFthrU8PlueMOupTOvl1khlqTzrRCKyl8DpthdXSGQs7VoR7KYOeLTTiMJ',
+        'user': 'user%3A5336577653%7C5336577653',
+        'smzdm_id': '5336577653',
+        '__gads': 'ID=f1d1daed94b71c29:T=1630632271:S=ALNI_MaGHc9nWB4qrKYgVsSKj_EJsV4e6A',
+        '__ckguid': '1b66w3rCXHlCrjscbiApfw3',
+        '__jsluid_s': 'f7ba549df3d2a0671d1364efa73154af',
+        'sensorsdata2015jssdkcross': '%7B%22distinct_id%22%3A%225336577653%22%2C%22first_id%22%3A%221768d221b8766f-08bef346d6047-c791039-2073600-1768d221b884ae%22%2C%22props%22%3A%7B%22%24latest_traffic_source_type%22%3A%22%E7%9B%B4%E6%8E%A5%E6%B5%81%E9%87%8F%22%2C%22%24latest_search_keyword%22%3A%22%E6%9C%AA%E5%8F%96%E5%88%B0%E5%80%BC_%E7%9B%B4%E6%8E%A5%E6%89%93%E5%BC%80%22%2C%22%24latest_referrer%22%3A%22%22%2C%22%24latest_landing_page%22%3A%22https%3A%2F%2Fwww.smzdm.com%2F%22%7D%2C%22%24device_id%22%3A%221768d221b8766f-08bef346d6047-c791039-2073600-1768d221b884ae%22%7D',
+        'smzdm_collection_youhui': '45809309',
+        '_zdmA.uid': 'ZDMA.wx3L-nc1T.1641646511.2419200',
+        'Hm_lvt_9b7ac3d38f30fe89ff0b8a0546904e58': '1640952479,1641267691,1641535532,1641646514',
+        'Hm_lpvt_9b7ac3d38f30fe89ff0b8a0546904e58': '1641647063',
+    }
+
+    headers = {
+        'Connection': 'keep-alive',
+        'Pragma': 'no-cache',
+        'Cache-Control': 'no-cache',
+        'sec-ch-ua': '" Not A;Brand";v="99", "Chromium";v="96", "Google Chrome";v="96"',
+        'sec-ch-ua-mobile': '?0',
+        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.110 Safari/537.36',
+        'sec-ch-ua-platform': '"Windows"',
+        'Accept': '*/*',
+        'Sec-Fetch-Site': 'same-site',
+        'Sec-Fetch-Mode': 'no-cors',
+        'Sec-Fetch-Dest': 'script',
+        'Referer': 'https://www.smzdm.com/',
+        'Accept-Language': 'zh-CN,zh;q=0.9',
+    }
+
+    params = (
+        ('callback', 'jQuery1124003452698039203983_1641646510957'),
+        ('_', '1641646510971'),
+    )
+    surl = b'aHR0cHM6Ly91c2VyLWFwaS5zbXpkbS5jb20vY2hlY2tpbg=='
+    url = base64.b64decode( surl ).decode()
+    response = requests.get(url, headers=headers, params=params, cookies=cookies)
+    print(response.text)
+    
+
+    
 if __name__ == '__main__':
     # 日志配置
     logger = log_setting()
@@ -195,12 +246,12 @@ if __name__ == '__main__':
     deviceid = sys.argv[11]
     sign = sys.argv[12]
 
-
     # 话费够
     # hfgoSign(atpAuthToken, mobile, userId, userSig)
     # 公交
 
     sljsign7207(sign_7207)
-    # sljsign8291(sign_8291)
-    # sljsign0883(acw_tc, sign1)
-    # yhsign(memberid, access_token, deviceid, sign)
+    sljsign8291(sign_8291)
+    sljsign0883(acw_tc, sign1)
+    yhsign(memberid, access_token, deviceid, sign)
+    smzdm()
