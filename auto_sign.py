@@ -100,12 +100,12 @@ def sljsign0883(acw_tc, sign):
     response = requests.get(url, headers=headers, cookies=cookies)
     print(response.text)
 
-def sljsign7207(sign_7207, auth_7207):
+def sljsign7207(sign_7207):
     time_369 = time.strftime("%a, %d %b %Y %H:%M:%S GMT", time.localtime())
     headers = {
         'Host': 'api.369cx.cn',
         'user-agent': 'Mozilla/5.0 (Linux; Android 6.0.1; Xiaomi/Redmi 4) Cx369Android/7100 NetType/WIFI BusQrCodeSdkVersion/4 DarkMode/0 CityId/2500',
-        'authorization': auth_7207,
+        'authorization': 'Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6IiIsInJvbGUiOiJWaXNpdG9yLFVzZXIiLCJuYW1laWQiOiIxMDY0NjY5IiwianRpIjoiMTMzYWQ3MzItOTZmYy00ZTM2LTgxZmYtYmI5OWJkNWE0NGQ0IiwibmJmIjoxNjQxNjA4NDA3LCJleHAiOjE2NDQyMDA0MDcsImlhdCI6MTY0MTYwODQwNywiaXNzIjoid2ViLjM2OWN4LmNuIiwiYXVkIjoiYXBpLndlYi4zNjljeC5jbiJ9.hJwcS9kfprgVISDYQLIsfdd2yC9SJKdU5-uz4ai23qcV6C7cbUSvxUzJchG7KquelXe6-VejD6FivrrDVuRX0ZnAGKq9QZ1rvT6F9qUe_JfEEncFbsveZ71hI3cIfeDXKpwd9cdI0Mtgj5vmfpMfM-MzLBZciG_dZSK_gaCR-62S5ohYm0ZWCCU8p_CV6jnaX3J10OxoyBhwUPa1rKVO_MLLQ72bOWdMfSlJagtHDYT62Azq2MiGg_uWMQnHbn8BMGFwNVcOScKTMXJgRwex-LumLZS4i4z-13kt-SdHZjJVj6hl5FYgBWVO5f2jfYRzmEkPyI8MN1O_RVUEBVmDAw',
         'sign': sign_7207,
         'cityid': '2500',
         'date': time_369,
@@ -176,7 +176,7 @@ if __name__ == '__main__':
     # 日志配置
     logger = log_setting()
 
-    if len(sys.argv) != 14:
+    if len(sys.argv) != 13:
         raise Exception("传入参数不正确！")
 
     atpAuthToken = sys.argv[1]
@@ -195,13 +195,12 @@ if __name__ == '__main__':
     deviceid = sys.argv[11]
     sign = sys.argv[12]
 
-    auth_7207 = sys.argv[13]
 
     # 话费够
     # hfgoSign(atpAuthToken, mobile, userId, userSig)
     # 公交
 
-    sljsign7207(sign_7207, auth_7207)
+    sljsign7207(sign_7207)
     # sljsign8291(sign_8291)
     # sljsign0883(acw_tc, sign1)
     # yhsign(memberid, access_token, deviceid, sign)
