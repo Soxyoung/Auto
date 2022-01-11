@@ -174,35 +174,25 @@ def yhsign(memberid, access_token, deviceid, sign):
 
 def smzdm():
     cookies = {
+        '__ckguid': 'lSl2Jebu7LEObg97iC5hqP',
+        'device_id': '10208344591637932442029475da194266cc01d7584f6a9f623b668b7f',
+        '__jsluid_s': '16d9f08ecc128e0903f99241228b6b5d',
+        'homepage_sug': 'b',
         'r_sort_type': 'score',
-        'smzdm_user_source': '0BE459D8C6D2EADD33E283EE04413C32',
-        '_ga_271744817': 'GS1.1.1620782829.7.1.1620782830.0',
-        'device_id': '2130706433162803948641793476fa2288af10ed929e07a2046d46241b',
-        'shequ_pc_sug': 'b',
-        '__gpi': '00000000-0000-0000-0000-000000000000&c216ZG0uY29t&Lw==',
-        'homepage_sug': 'f',
-        '_ga_09SRZM2FDD': 'GS1.1.1636724126.72.1.1636724788.0',
-        '_ga': 'GA1.2.2120138638.1630632273',
-        'sess': 'AT-nLvFYHStsYzunvA%2ByyvPLsxGpZr%2B%2FMlts8jPLIeKyjeZHIhn4UxCLT7Q8n2qwYqFthrU8PlueMOupTOvl1khlqTzrRCKyl8DpthdXSGQs7VoR7KYOeLTTiMJ',
+        'Hm_lvt_9b7ac3d38f30fe89ff0b8a0546904e58': '1641903770',
+        'sensorsdata2015jssdkcross': '%7B%22distinct_id%22%3A%2217d5c618b1b1f6-0465420477f41a-734d264e-1049088-17d5c618b1c283%22%2C%22first_id%22%3A%22%22%2C%22props%22%3A%7B%22%24latest_traffic_source_type%22%3A%22%E7%9B%B4%E6%8E%A5%E6%B5%81%E9%87%8F%22%2C%22%24latest_search_keyword%22%3A%22%E6%9C%AA%E5%8F%96%E5%88%B0%E5%80%BC_%E7%9B%B4%E6%8E%A5%E6%89%93%E5%BC%80%22%2C%22%24latest_referrer%22%3A%22%22%7D%2C%22%24device_id%22%3A%2217d5c618b1b1f6-0465420477f41a-734d264e-1049088-17d5c618b1c283%22%7D',
+        'sess': 'AT-nLvFYHStsYzunQoIfdPYND4dO7aTer%2B8FD2IZqu5yNWfBgMI3rgRSg8L8NT3x7bP1%2BNjt%2FmToaC3GEdWLCKQB63UGvvMTtxup8PgMhqdLZ6DV55VHDfvvw0G',
         'user': 'user%3A5336577653%7C5336577653',
         'smzdm_id': '5336577653',
-        '__gads': 'ID=f1d1daed94b71c29:T=1630632271:S=ALNI_MaGHc9nWB4qrKYgVsSKj_EJsV4e6A',
-        '__ckguid': '1b66w3rCXHlCrjscbiApfw3',
-        '__jsluid_s': 'f7ba549df3d2a0671d1364efa73154af',
-        'sensorsdata2015jssdkcross': '%7B%22distinct_id%22%3A%225336577653%22%2C%22first_id%22%3A%221768d221b8766f-08bef346d6047-c791039-2073600-1768d221b884ae%22%2C%22props%22%3A%7B%22%24latest_traffic_source_type%22%3A%22%E7%9B%B4%E6%8E%A5%E6%B5%81%E9%87%8F%22%2C%22%24latest_search_keyword%22%3A%22%E6%9C%AA%E5%8F%96%E5%88%B0%E5%80%BC_%E7%9B%B4%E6%8E%A5%E6%89%93%E5%BC%80%22%2C%22%24latest_referrer%22%3A%22%22%2C%22%24latest_landing_page%22%3A%22https%3A%2F%2Fwww.smzdm.com%2F%22%7D%2C%22%24device_id%22%3A%221768d221b8766f-08bef346d6047-c791039-2073600-1768d221b884ae%22%7D',
-        'smzdm_collection_youhui': '45809309',
-        '_zdmA.uid': 'ZDMA.wx3L-nc1T.1641646511.2419200',
-        'Hm_lvt_9b7ac3d38f30fe89ff0b8a0546904e58': '1640952479,1641267691,1641535532,1641646514',
-        'Hm_lpvt_9b7ac3d38f30fe89ff0b8a0546904e58': '1641647063',
+        'Hm_lpvt_9b7ac3d38f30fe89ff0b8a0546904e58': '1641903889',
+        '_zdmA.uid': 'ZDMA.QEvnM2Dgz.1641903889.2419200',
     }
 
     headers = {
         'Connection': 'keep-alive',
-        'Pragma': 'no-cache',
-        'Cache-Control': 'no-cache',
-        'sec-ch-ua': '" Not A;Brand";v="99", "Chromium";v="96", "Google Chrome";v="96"',
+        'sec-ch-ua': '"Chromium";v="21", " Not;A Brand";v="99"',
         'sec-ch-ua-mobile': '?0',
-        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.110 Safari/537.36',
+        'User-Agent': 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4621.0 Safari/537.36',
         'sec-ch-ua-platform': '"Windows"',
         'Accept': '*/*',
         'Sec-Fetch-Site': 'same-site',
@@ -213,10 +203,10 @@ def smzdm():
     }
 
     params = (
-        ('callback', 'jQuery1124003452698039203983_1641646510957'),
-        ('_', '1641646510971'),
+        ('callback', 'jQuery112406748769016846299_1641903888553'),
+        ('_', '1641903888556'),
     )
-    surl = b'aHR0cHM6Ly91c2VyLWFwaS5zbXpkbS5jb20vY2hlY2tpbg=='
+    surl = b'aHR0cHM6Ly96aGl5b3Uuc216ZG0uY29tL3VzZXIvY2hlY2tpbi9qc29ucF9jaGVja2lu'
     url = base64.b64decode( surl ).decode()
     response = requests.get(url, headers=headers, params=params, cookies=cookies)
     print(response.text)
