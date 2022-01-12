@@ -211,7 +211,32 @@ def smzdm():
     response = requests.get(url, headers=headers, params=params, cookies=cookies)
     print(response.text)
     
-
+def abcBean():
+    cookies = {
+        'sclfyxlife_abchina_mobile_id': 'x3polt0xub11my04jvhkdwzx',
+        'sensorsdata2015jssdkcross': '%7B%22distinct_id%22%3A%2217ddd90924117d-07f0c267cdfe744-3f5f5b26-181760-17ddd909243654%22%2C%22first_id%22%3A%22%22%2C%22props%22%3A%7B%22%24latest_traffic_source_type%22%3A%22%E7%9B%B4%E6%8E%A5%E6%B5%81%E9%87%8F%22%2C%22%24latest_search_keyword%22%3A%22%E6%9C%AA%E5%8F%96%E5%88%B0%E5%80%BC_%E7%9B%B4%E6%8E%A5%E6%89%93%E5%BC%80%22%2C%22%24latest_referrer%22%3A%22%22%7D%2C%22%24device_id%22%3A%2217ddd90924117d-07f0c267cdfe744-3f5f5b26-181760-17ddd909243654%22%7D',
+        'BIGipServerpool_sclf_yx': '!y0yOPYKMDjhXnO0EZa3sYa6vmZstMfuVWk6V8eGlgGQWF9iGPH/OKBWy7sQSysNBxHpp8yy0VjXPoA==',
+        'BIGipServerpool_sclf_yx_web': '!tV5V7pKdCHc2fzwEZa3sYa6vmZstMexMBt0u6QqH10j1lU18YX99VezCTbNUxee62lEFI1QCIxTwUQ==',
+        'route': '62e13e4e62ac140ce3bfd1146a661b16',
+        'BIGipServerpool_sclf_yx_engine_web': '!QKLACdUZcEyL75MEZa3sYa6vmZstMb7xK6AfQd/cXJ8eSAjqBzykR/lY5Mj54vVMtvN7L/Q8DoJbEA==',
+        'JSESSIONID': '0000fhfJuglRvWDNKCNZ4Jxhigp:1f1f7pbqc',
+    }
+    
+    headers = {
+        'Host': 'enjoy.abchina.com',
+        'Origin': 'https://enjoy.abchina.com',
+        'Content-Type': 'application/json',
+        'Accept-Language': 'en-us',
+        'Accept': '*/*',
+        'User-Agent': 'Mozilla/5.0 (iPhone; CPU iPhone OS 14_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/18F72 NebulaSDK/1.8.100112 Nebula Bankabc/Portal BankabciPhone/7.0.0 rv:7.0.3 iOS/14.6WK PSDType(1) mPaaSClient/7.0.3',
+        'Referer': 'https://enjoy.abchina.com/yx/beanhome2021?from=ebank&clearStorage=true',
+    }
+    
+    data = '{}'
+    surl = b'aHR0cHM6Ly9lbmpveS5hYmNoaW5hLmNvbS95eC13ZWIvYmVhbkRldGFpbC9zaWduSW4='
+    url = base64.b64decode( surl ).decode()
+    response = requests.post(url, headers=headers, cookies=cookies, data=data)
+    print(response.text)
     
 if __name__ == '__main__':
     # 日志配置
@@ -245,3 +270,4 @@ if __name__ == '__main__':
     sljsign0883(acw_tc, sign1)
     yhsign(memberid, access_token, deviceid, sign)
     smzdm()
+    abcBean()
