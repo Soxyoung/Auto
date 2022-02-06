@@ -268,6 +268,6 @@ if __name__ == '__main__':
     sljsign7207(sign_7207)
     sljsign8291(sign_8291)
     sljsign0883(acw_tc, sign1)
-    yhsign(memberid, access_token, deviceid, sign)
+#     yhsign(memberid, access_token, deviceid, sign)
     smzdm()
-    abcBean()
+ 
