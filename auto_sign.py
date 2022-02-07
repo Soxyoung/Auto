@@ -299,12 +299,13 @@ if __name__ == '__main__':
     # 话费够
     # hfgoSign(atpAuthToken, mobile, userId, userSig)
     # 公交
-
+    
+    smzdm()
     sljsign7207(sign_7207)
     sljsign8291(sign_8291)
-    sljsign0883(acw_tc, sign1)
     sljsign7206(sign_7206)
     sljsign8958(sign_8958)
+    sljsign0883(acw_tc, sign1)
 #     yhsign(memberid, access_token, deviceid, sign)
-#     smzdm()
+
  
