@@ -131,6 +131,38 @@ def sljsign8291(sign_8291):
     url = base64.b64decode( surl ).decode()
     response = requests.get(url, headers=headers)
     print(response.text)
+    
+def sljsign8958(sign_8958):
+    time_369 = time.strftime("%a, %d %b %Y %H:%M:%S GMT", time.localtime())
+    headers = {
+        'Host': 'api.369cx.cn',
+        'user-agent': 'Mozilla/5.0 (Linux; Android 6.0.1; Xiaomi/Redmi 4) Cx369Android/7200 NetType/WIFI BusQrCodeSdkVersion/4 DarkMode/0 CityId/2500',
+        'authorization': 'Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6IiIsInJvbGUiOiJWaXNpdG9yLFVzZXIiLCJuYW1laWQiOiIxMDg3Nzk1IiwianRpIjoiODA5NDc3NjgtNjhlNy00ZWVkLTg3ZDctOWUxODkxM2Q5Y2EyIiwibmJmIjoxNjQ0MTU4OTgwLCJleHAiOjE2NDY3NTA5ODAsImlhdCI6MTY0NDE1ODk4MCwiaXNzIjoid2ViLjM2OWN4LmNuIiwiYXVkIjoiYXBpLndlYi4zNjljeC5jbiJ9.jDfeuy805nDOFa1liyf38L1TCeZjg1TiL59s6qx6Su4RKKcyKJkZYUFdnd4ul--zoxsHKakW5LTqH5YODh2Rc-UN-FsUmj4xW1Yw1GugHF1F5rnzEFUHE7h4tuy6VzHfYaHnQxo1yHJgNoszq-2NKmbbBWuuICiIZUd6bv0nPzRe_BCCqFqy4o5zg2HBDGrxo_xWRkB3MaeWhKmNBMk8EuJLoscT9wQJ8l4dhEuW_Y-GVAu-SccQlkwjwRbnHkhLxx0gGMXNaUCcbKNLE7rNBMA5DpAXxuCmD5N-PmYile4yRNDjYMVJStmwooIln72cf2zEIgbN4_vj446mZ9bSxQ',
+        'sign': sign_8958,
+        'cityid': '2500',
+        'date': time_369,
+        'accept-encoding': 'gzip',
+    }
+    surl = b'aHR0cHM6Ly9hcGkuMzY5Y3guY24vdjIvSW50ZWdyYWwvRGF5bHlTaWdu'
+    url = base64.b64decode( surl ).decode()
+    response = requests.get(url, headers=headers)
+    print(response.text)
+
+def sljsign7206(sign_7206):
+    time_369 = time.strftime("%a, %d %b %Y %H:%M:%S GMT", time.localtime())
+    headers = {
+        'Host': 'api.369cx.cn',
+        'user-agent': 'Mozilla/5.0 (Linux; Android 6.0.1; Xiaomi/Redmi 4) Cx369Android/7200 NetType/4G BusQrCodeSdkVersion/4 DarkMode/0 CityId/2500',
+        'authorization': 'Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6IiIsInJvbGUiOiJWaXNpdG9yLFVzZXIiLCJuYW1laWQiOiIxMDg3Nzk4IiwianRpIjoiOWNmYWYxYTctMmI3My00NTZhLWJjNjUtYmVjYzA2NDJkYmQxIiwibmJmIjoxNjQ0MTU5OTc2LCJleHAiOjE2NDY3NTE5NzYsImlhdCI6MTY0NDE1OTk3NiwiaXNzIjoid2ViLjM2OWN4LmNuIiwiYXVkIjoiYXBpLndlYi4zNjljeC5jbiJ9.Jtc-hDW6EugwCGsP3ATkZWJ_G-wVEL9OlNT4xEG94n0oQ5z42ybrjr7AKzfCHJuxUlcxB2aCKNm6aHdyfsxKVGmPzvsl5Y-avqQoqxKX6_yxgTOV52HEBVjHFCctmvILE6m1FasHg-VYVSwA903IovjvhSVFbfM7yNBOlU381TJYT4oXNmjCNotyN6fI4g1xrqQVc9O0d1fAKcK-HbI3k8i1GQdKYqDAiZCdW-9tTaA3AgU1OcHiNa1Fi4xAkjo17_ht8DCdq0z7KbiDXtwZlNwP1yrp_2BqEj-Lq_ekYZp2hW_rMN_XBEIvH1WNFVTTYs3k8yWjrGR6lsXX5oWI5A',
+        'sign': sign_7206,
+        'cityid': '2500',
+        'date': time_369,
+        'accept-encoding': 'gzip',
+    }
+    surl = b'aHR0cHM6Ly9hcGkuMzY5Y3guY24vdjIvSW50ZWdyYWwvRGF5bHlTaWdu'
+    url = base64.b64decode( surl ).decode()
+    response = requests.get(url, headers=headers)
+    print(response.text)
 
 def yhsign(memberid, access_token, deviceid, sign):
     time_yh = int(round(time.time() * 1000))
@@ -242,8 +274,8 @@ if __name__ == '__main__':
     # 日志配置
     logger = log_setting()
 
-    if len(sys.argv) != 13:
-        raise Exception("传入参数不正确！")
+#     if len(sys.argv) != 13:
+#         raise Exception("传入参数不正确！")
 
     atpAuthToken = sys.argv[1]
     mobile = sys.argv[2]
@@ -260,6 +292,9 @@ if __name__ == '__main__':
     access_token = sys.argv[10]
     deviceid = sys.argv[11]
     sign = sys.argv[12]
+    
+    sign_7206 = sys.argv[13]
+    sign_8958 = sys.argv[14]
 
     # 话费够
     # hfgoSign(atpAuthToken, mobile, userId, userSig)
@@ -268,6 +303,8 @@ if __name__ == '__main__':
     sljsign7207(sign_7207)
     sljsign8291(sign_8291)
     sljsign0883(acw_tc, sign1)
+    sljsign7206(sign_7206)
+    sljsign8958(sign_8958)
 #     yhsign(memberid, access_token, deviceid, sign)
-    smzdm()
+#     smzdm()
  
