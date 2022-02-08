@@ -76,29 +76,7 @@ def hfgoSign(atpAuthToken, mobile, userId, userSig):
     print(response.text)
     # log_print("话费够：" + response.text)
 
-def sljsign0883(acw_tc, sign):
-    time_369 = time.strftime("%a, %d %b %Y %H:%M:%S GMT", time.localtime())
 
-    cookies = {
-        'acw_tc': acw_tc,
-    }
-
-    headers = {
-        'Host': 'api.369cx.cn',
-        'accept': '*/*',
-        'authorization': 'Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6IiIsInJvbGUiOiJWaXNpdG9yLFVzZXIiLCJuYW1laWQiOiI4NzEyODkiLCJqdGkiOiIyMDRkZDI0YS05ZTY3LTQzYmUtYjQ0Yi1jYzBmZjk3MWM1ZDciLCJuYmYiOjE2NDEzMDM0NDEsImV4cCI6MTY0Mzg5NTQ0MSwiaWF0IjoxNjQxMzAzNDQxLCJpc3MiOiJ3ZWIuMzY5Y3guY24iLCJhdWQiOiJhcGkud2ViLjM2OWN4LmNuIn0.AV0iGHMfK7CYNNYW2KzWVJb9IjTXtpYL3AJ5fNeKT5GRgg5_5q918bEQbsVYG1Jm_qw86Jn3IjqJvOnOl6AFkLsq_-88hjjUW1qGlBwtWokSteWxDso77JdQl54o413lE9atCvgZuZq-cYxmgmW4Y_1Fi7yBdgEYdYrgAIGsU7-QiGeQyAquASuUeYl30reovHPeXaiU4BlqdlTrmmdVujq9The-Nk0rU7lrsNZtcGMJBEb0RKKwrLiIFRcf_7gwTSRswCIgL_u3mDLpbTzVZZrqZJorRmb0gybNaeCMxL8Z6_Q5PxKJaS546yFY_Wq3gAJ9gPPv5Lg8HkY5EgNf7A',
-        'accept-language': 'zh-Hans-CN;q=1, en-CN;q=0.9',
-        'date': time_369,
-        'cityid': '2500',
-        'geo': 'F%c..Vy',
-        'user-agent': 'Mozilla/5.0 (iPhone; CPU iPhone OS 14_6 like Mac OS X; iPhone_SE) Cx369iOS/7100 NetType/WIFI DarkMode/1 BlindMode/0',
-        'sign': sign,
-    }
-
-    surl = b'aHR0cHM6Ly9hcGkuMzY5Y3guY24vdjIvSW50ZWdyYWwvRGF5bHlTaWdu'
-    url = base64.b64decode( surl ).decode()
-    response = requests.get(url, headers=headers, cookies=cookies)
-    print(response.text)
 
 def sljsign7207(sign_7207):
     time_369 = time.strftime("%a, %d %b %Y %H:%M:%S GMT", time.localtime())
@@ -162,6 +140,46 @@ def sljsign7206(sign_7206):
     surl = b'aHR0cHM6Ly9hcGkuMzY5Y3guY24vdjIvSW50ZWdyYWwvRGF5bHlTaWdu'
     url = base64.b64decode( surl ).decode()
     response = requests.get(url, headers=headers)
+    print(response.text)
+    
+def sljsign0883(sign):
+    time_369 = time.strftime("%a, %d %b %Y %H:%M:%S GMT", time.localtime())
+
+    headers = {
+        'Host': 'api.369cx.cn',
+        'cityid': '2500',
+        'accept': '*/*',
+        'geo': 'F%DHIY0',
+        'authorization': 'Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6IiIsInJvbGUiOiJWaXNpdG9yLFVzZXIiLCJuYW1laWQiOiI4NzEyODkiLCJqdGkiOiIyZWU2OTVkNS1lNzQ4LTRkZjYtOWI5NC1mNmM3ZmVlYjRiNTIiLCJuYmYiOjE2NDE4MTY0ODcsImV4cCI6MTY0NDQwODQ4NywiaWF0IjoxNjQxODE2NDg3LCJpc3MiOiJ3ZWIuMzY5Y3guY24iLCJhdWQiOiJhcGkud2ViLjM2OWN4LmNuIn0.bSZTulyfkI8HjBLovYLhqjleX96Nenv-s3yC-kx2xALqnYBNhHjkaB78T_lAgx2RspvpNHrigQ55eJCVYc3xrS8BgJ13VrUvLo3Cg54ganGN_kGZd0mjGnomJl6hL1p81x3-Fl4mSy2Yu8ioPvQEYd4UYjc6pojVcuWLF0HTiY6PrXVJOpK0uaCh8p5EhieH6l7o_bMbOooibaft1g1u7dfP6dLl028Ne-wFx-XhUX3vAWGDm74f9Aat8zqRdr4oo3JXQwVsMpQ_Exw_40x87UqsyxWtfcSGGalFLJDyScaE1SL0-SZ2kKNplXA6xTLaqV4g4X_3pyd6oPC7xqZvXQ',
+        'sign': sign,
+        'date': time_369,
+        'accept-language': 'zh-Hans-CN;q=1, en-CN;q=0.9',
+        'user-agent': 'Mozilla/5.0 (iPhone; CPU iPhone OS 14_6 like Mac OS X; iPhone_SE) Cx369iOS/7200 NetType/WIFI DarkMode/1 BlindMode/0',
+    }
+
+    surl = b'aHR0cHM6Ly9hcGkuMzY5Y3guY24vdjIvSW50ZWdyYWwvRGF5bHlTaWdu'
+    url = base64.b64decode( surl ).decode()
+    response = requests.get(url, headers=headers, cookies=cookies)
+    print(response.text)
+
+def sljsign2695(sign):
+    time_369 = time.strftime("%a, %d %b %Y %H:%M:%S GMT", time.localtime())
+
+    headers = {
+        'Host': 'api.369cx.cn',
+        'cityid': '2500',
+        'accept': '*/*',
+        'geo': 'F$\'(CF2',
+        'authorization': 'Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6IiIsInJvbGUiOiJWaXNpdG9yLFVzZXIiLCJuYW1laWQiOiIxMDg3NTI1IiwianRpIjoiMzY4YTQ1MDctMTBkOC00ZDQxLWIzNjQtZGYzNzYxODdjMTZlIiwibmJmIjoxNjQ0MjQ1NDQ4LCJleHAiOjE2NDY4Mzc0NDgsImlhdCI6MTY0NDI0NTQ0OCwiaXNzIjoid2ViLjM2OWN4LmNuIiwiYXVkIjoiYXBpLndlYi4zNjljeC5jbiJ9.TxfhfOyaVdebegwNFbAs17KCn8SvxrRyWTfStO83_PMTs7pwLplLHSbtKibHqW1KxPPl1vtCSQm3z6RSYi2mukS7p04zBk6CA-fJIhLMeveriCCZg8wVMeZcEzI9E1v7twxE_QvbPQ6_3PrCnip1Lumvod7btopWOo1dQEwatZ6kv42BoYyfirQQoFsrGcUVNfOjV0bDYn5pWswa_b0FyjxtV9GNlfXTKrQrVpcQKZD63OYJeAef0l1DRmEmIAOdfPhtQdJT_SaQW02r2S8Gy2LANdPibRgekD-zudjl4rpd2eiydIFOBRADFNf-UtBU6hGR3TE380RMdK27Y0CrwA',
+        'sign': sign,
+        'date': time_369,
+        'accept-language': 'zh-Hans-CN;q=1, en-CN;q=0.9',
+        'user-agent': 'Mozilla/5.0 (iPhone; CPU iPhone OS 14_6 like Mac OS X; iPhone_SE) Cx369iOS/7200 NetType/WIFI DarkMode/1 BlindMode/0',
+    }
+
+    surl = b'aHR0cHM6Ly9hcGkuMzY5Y3guY24vdjIvSW50ZWdyYWwvRGF5bHlTaWdu'
+    url = base64.b64decode( surl ).decode()
+    response = requests.get(url, headers=headers, cookies=cookies)
     print(response.text)
 
 def yhsign(memberid, access_token, deviceid, sign):
@@ -295,6 +313,8 @@ if __name__ == '__main__':
     
     sign_7206 = sys.argv[13]
     sign_8958 = sys.argv[14]
+    sign_2695 = sys.argv[15]
+    sign_0883 = sys.argv[16]
 
     # 话费够
     # hfgoSign(atpAuthToken, mobile, userId, userSig)
@@ -305,7 +325,8 @@ if __name__ == '__main__':
     sljsign8291(sign_8291)
     sljsign7206(sign_7206)
     sljsign8958(sign_8958)
-    sljsign0883(acw_tc, sign1)
+    sljsign0883(sign_0883)
+    sljsign2695(sign_2695)
 #     yhsign(memberid, access_token, deviceid, sign)
 
  
