@@ -159,7 +159,7 @@ def sljsign0883(sign):
 
     surl = b'aHR0cHM6Ly9hcGkuMzY5Y3guY24vdjIvSW50ZWdyYWwvRGF5bHlTaWdu'
     url = base64.b64decode( surl ).decode()
-    response = requests.get(url, headers=headers, cookies=cookies)
+    response = requests.get(url, headers=headers)
     print(response.text)
 
 def sljsign2695(sign):
@@ -179,7 +179,7 @@ def sljsign2695(sign):
 
     surl = b'aHR0cHM6Ly9hcGkuMzY5Y3guY24vdjIvSW50ZWdyYWwvRGF5bHlTaWdu'
     url = base64.b64decode( surl ).decode()
-    response = requests.get(url, headers=headers, cookies=cookies)
+    response = requests.get(url, headers=headers)
     print(response.text)
 
 def yhsign(memberid, access_token, deviceid, sign):
