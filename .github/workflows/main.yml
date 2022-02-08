@@ -38,5 +38,5 @@ jobs:
         run: pip install -r requirements.txt
       # 运行 python 脚本文件，其中的参数取 secrets 中配置的加密参数，账户名和密码
       - name: Working
-        run: python auto_sign.py ${{ secrets.ATPAUTHTOKEN }} ${{ secrets.MOBILE }}  ${{ secrets.USERID}}  ${{ secrets.USERSIG}} ${{ secrets.ACW_TC}} ${{ secrets.CX_SIGN}} ${{ secrets.SIGN_7207}} ${{ secrets.SIGN_8291}} ${{ secrets.YH_MEMBERID}} ${{ secrets.YH_ACCESS_TOKEN}} ${{ secrets.YH_DEVICEID}} ${{ secrets.YH_SIGN}} ${{ secrets.SIGN_7206}} ${{ secrets.SIGN_8958}}
+        run: python auto_sign.py ${{ secrets.ATPAUTHTOKEN }} ${{ secrets.MOBILE }}  ${{ secrets.USERID}}  ${{ secrets.USERSIG}} ${{ secrets.ACW_TC}} ${{ secrets.CX_SIGN}} ${{ secrets.SIGN_7207}} ${{ secrets.SIGN_8291}} ${{ secrets.YH_MEMBERID}} ${{ secrets.YH_ACCESS_TOKEN}} ${{ secrets.YH_DEVICEID}} ${{ secrets.YH_SIGN}} ${{ secrets.SIGN_7206}} ${{ secrets.SIGN_8958}} ${{ secrets.SIGN_2695}} ${{ secrets.SIGN_0883}}
 
