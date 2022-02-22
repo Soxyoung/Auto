@@ -7,6 +7,9 @@ import sys
 import logging
 import datetime
 import time
+from datetime import timedelta
+from datetime import timezone
+
 
 # 在容器里运行时时间为 UTC 时间，不是北京时间，需要进行调整
 def beijing(sec, what):
@@ -321,6 +324,15 @@ if __name__ == '__main__':
     #     永辉生活 已注销账号
     #     yhsign(memberid, access_token, deviceid, sign)
     # 公交
+    
+    SHA_TZ = timezone(
+        timedelta(hours=8),
+        name='Asia/Shanghai',
+    )
+    # 协调世界时
+    utc_now = datetime.utcnow().replace(tzinfo=timezone.utc)
+    beijing_now = utc_now.astimezone(SHA_TZ)
+    print(beijing_now, beijing_now.tzname())
     
     smzdm()
 #     sljsign0883(sign_0883)
