@@ -318,15 +318,18 @@ if __name__ == '__main__':
 
     # 话费够
     # hfgoSign(atpAuthToken, mobile, userId, userSig)
+    #     永辉生活 已注销账号
+    #     yhsign(memberid, access_token, deviceid, sign)
     # 公交
     
     smzdm()
-    sljsign7207(sign_7207)
-    sljsign8291(sign_8291)
+#     sljsign0883(sign_0883)
+#     sljsign7207(sign_7207)
+#     sljsign8291(sign_8291)
+    
     sljsign7206(sign_7206)
     sljsign8958(sign_8958)
-    sljsign0883(sign_0883)
     sljsign2695(sign_2695)
-#     yhsign(memberid, access_token, deviceid, sign)
+
 
  
