@@ -5,7 +5,7 @@ import requests
 import base64
 import sys
 import logging
-import datetime
+from datetime import datetime
 import time
 from datetime import timedelta
 from datetime import timezone
