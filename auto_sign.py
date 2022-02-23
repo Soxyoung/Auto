@@ -152,8 +152,8 @@ def sljsign0883(sign):
         'Host': 'api.369cx.cn',
         'cityid': '2500',
         'accept': '*/*',
-        'geo': 'F%DHIY0',
-        'authorization': 'Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6IiIsInJvbGUiOiJWaXNpdG9yLFVzZXIiLCJuYW1laWQiOiI4NzEyODkiLCJqdGkiOiIyZWU2OTVkNS1lNzQ4LTRkZjYtOWI5NC1mNmM3ZmVlYjRiNTIiLCJuYmYiOjE2NDE4MTY0ODcsImV4cCI6MTY0NDQwODQ4NywiaWF0IjoxNjQxODE2NDg3LCJpc3MiOiJ3ZWIuMzY5Y3guY24iLCJhdWQiOiJhcGkud2ViLjM2OWN4LmNuIn0.bSZTulyfkI8HjBLovYLhqjleX96Nenv-s3yC-kx2xALqnYBNhHjkaB78T_lAgx2RspvpNHrigQ55eJCVYc3xrS8BgJ13VrUvLo3Cg54ganGN_kGZd0mjGnomJl6hL1p81x3-Fl4mSy2Yu8ioPvQEYd4UYjc6pojVcuWLF0HTiY6PrXVJOpK0uaCh8p5EhieH6l7o_bMbOooibaft1g1u7dfP6dLl028Ne-wFx-XhUX3vAWGDm74f9Aat8zqRdr4oo3JXQwVsMpQ_Exw_40x87UqsyxWtfcSGGalFLJDyScaE1SL0-SZ2kKNplXA6xTLaqV4g4X_3pyd6oPC7xqZvXQ',
+        'geo': 'F%QTj#s',
+        'authorization': 'Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6IiIsInJvbGUiOiJWaXNpdG9yLFVzZXIiLCJuYW1laWQiOiI4NzEyODkiLCJqdGkiOiJlOTI1MzI4OC1hZmVhLTQyNGItYWZjZC01NGNlMGVkOGM2YjciLCJuYmYiOjE2NDQyNzg2NzYsImV4cCI6MTY0Njg3MDY3NiwiaWF0IjoxNjQ0Mjc4Njc2LCJpc3MiOiJ3ZWIuMzY5Y3guY24iLCJhdWQiOiJhcGkud2ViLjM2OWN4LmNuIn0.Rf_UIp4xEIKzvw-_UnvYMgMrWPKx6aEZGRw-Rmx8taB4-REg5DdpDooHVttTDYPTaRTIw9MXxQzRLWNJmXn8LvIH1Z26w2EPAKF_dT9lJ4yAAmZ-VdlprKnwpbRcPPBxsJ7khvbNLykJLnlZ0MZ29ViZzeYUyBV637fwQP6JnIPfaPkSDmxq7DlBKwdt03Fihi0aWaWGAM4fLOdABZE75H11JtoaOWAUYAq87dYueaRDOOQZQgI1n_Cn809FHiEVxtg20bsoJuRYgKGiYNvyyDv4Nr0nkUkiHIMYiM4k0CdBgVmepSWGJuQ9qKhSS9DxCH7odnTcMuPhYbiWENGvjg',
         'sign': sign,
         'date': time_369,
         'accept-language': 'zh-Hans-CN;q=1, en-CN;q=0.9',
@@ -262,33 +262,6 @@ def smzdm():
     surl = b'aHR0cHM6Ly96aGl5b3Uuc216ZG0uY29tL3VzZXIvY2hlY2tpbi9qc29ucF9jaGVja2lu'
     url = base64.b64decode( surl ).decode()
     response = requests.get(url, headers=headers, params=params, cookies=cookies)
-    print(response.text)
-    
-def abcBean():
-    cookies = {
-        'sclfyxlife_abchina_mobile_id': 'x3polt0xub11my04jvhkdwzx',
-        'sensorsdata2015jssdkcross': '%7B%22distinct_id%22%3A%2217ddd90924117d-07f0c267cdfe744-3f5f5b26-181760-17ddd909243654%22%2C%22first_id%22%3A%22%22%2C%22props%22%3A%7B%22%24latest_traffic_source_type%22%3A%22%E7%9B%B4%E6%8E%A5%E6%B5%81%E9%87%8F%22%2C%22%24latest_search_keyword%22%3A%22%E6%9C%AA%E5%8F%96%E5%88%B0%E5%80%BC_%E7%9B%B4%E6%8E%A5%E6%89%93%E5%BC%80%22%2C%22%24latest_referrer%22%3A%22%22%7D%2C%22%24device_id%22%3A%2217ddd90924117d-07f0c267cdfe744-3f5f5b26-181760-17ddd909243654%22%7D',
-        'BIGipServerpool_sclf_yx': '!y0yOPYKMDjhXnO0EZa3sYa6vmZstMfuVWk6V8eGlgGQWF9iGPH/OKBWy7sQSysNBxHpp8yy0VjXPoA==',
-        'BIGipServerpool_sclf_yx_web': '!tV5V7pKdCHc2fzwEZa3sYa6vmZstMexMBt0u6QqH10j1lU18YX99VezCTbNUxee62lEFI1QCIxTwUQ==',
-        'route': '62e13e4e62ac140ce3bfd1146a661b16',
-        'BIGipServerpool_sclf_yx_engine_web': '!QKLACdUZcEyL75MEZa3sYa6vmZstMb7xK6AfQd/cXJ8eSAjqBzykR/lY5Mj54vVMtvN7L/Q8DoJbEA==',
-        'JSESSIONID': '0000fhfJuglRvWDNKCNZ4Jxhigp:1f1f7pbqc',
-    }
-    
-    headers = {
-        'Host': 'enjoy.abchina.com',
-        'Origin': 'https://enjoy.abchina.com',
-        'Content-Type': 'application/json',
-        'Accept-Language': 'en-us',
-        'Accept': '*/*',
-        'User-Agent': 'Mozilla/5.0 (iPhone; CPU iPhone OS 14_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/18F72 NebulaSDK/1.8.100112 Nebula Bankabc/Portal BankabciPhone/7.0.0 rv:7.0.3 iOS/14.6WK PSDType(1) mPaaSClient/7.0.3',
-        'Referer': 'https://enjoy.abchina.com/yx/beanhome2021?from=ebank&clearStorage=true',
-    }
-    
-    data = '{}'
-    surl = b'aHR0cHM6Ly9lbmpveS5hYmNoaW5hLmNvbS95eC13ZWIvYmVhbkRldGFpbC9zaWduSW4='
-    url = base64.b64decode( surl ).decode()
-    response = requests.post(url, headers=headers, cookies=cookies, data=data)
     print(response.text)
     
 if __name__ == '__main__':
