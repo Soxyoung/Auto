@@ -38,6 +38,13 @@ jobs:
         run: pip install -r requirements.txt
       # 运行 python 脚本文件，其中的参数取 secrets 中配置的加密参数，账户名和密码
       - name: Working
-        run:
+        run: |
           random_time=$(($RANDOM % 186))
           echo "等待 ${random_time} 分钟后开始签到"
+          random_time=$(($RANDOM % 300))
+          echo "等待 ${random_time} 分钟后开始签到"
+          for((i=1;i<=${random_time};i++));  
+          do
+          echo "倒计时 $[${random_time}-$i] 分钟"
+          sleep 1m
+          done
