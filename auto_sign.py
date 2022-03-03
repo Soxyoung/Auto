@@ -85,12 +85,14 @@ def sljsign7207(sign_7207):
     time_369 = time.strftime("%a, %d %b %Y %H:%M:%S GMT", time.localtime())
     headers = {
         'Host': 'api.369cx.cn',
-        'user-agent': 'Mozilla/5.0 (Linux; Android 6.0.1; Xiaomi/Redmi 4) Cx369Android/7100 NetType/WIFI BusQrCodeSdkVersion/4 DarkMode/0 CityId/2500',
-        'authorization': 'Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6IiIsInJvbGUiOiJWaXNpdG9yLFVzZXIiLCJuYW1laWQiOiIxMDY0NjY5IiwianRpIjoiMTMzYWQ3MzItOTZmYy00ZTM2LTgxZmYtYmI5OWJkNWE0NGQ0IiwibmJmIjoxNjQxNjA4NDA3LCJleHAiOjE2NDQyMDA0MDcsImlhdCI6MTY0MTYwODQwNywiaXNzIjoid2ViLjM2OWN4LmNuIiwiYXVkIjoiYXBpLndlYi4zNjljeC5jbiJ9.hJwcS9kfprgVISDYQLIsfdd2yC9SJKdU5-uz4ai23qcV6C7cbUSvxUzJchG7KquelXe6-VejD6FivrrDVuRX0ZnAGKq9QZ1rvT6F9qUe_JfEEncFbsveZ71hI3cIfeDXKpwd9cdI0Mtgj5vmfpMfM-MzLBZciG_dZSK_gaCR-62S5ohYm0ZWCCU8p_CV6jnaX3J10OxoyBhwUPa1rKVO_MLLQ72bOWdMfSlJagtHDYT62Azq2MiGg_uWMQnHbn8BMGFwNVcOScKTMXJgRwex-LumLZS4i4z-13kt-SdHZjJVj6hl5FYgBWVO5f2jfYRzmEkPyI8MN1O_RVUEBVmDAw',
-        'sign': sign_7207,
-        'cityid': '2500',
-        'date': time_369,
-        'accept-encoding': 'gzip',
+        'Accept-Language': 'zh-Hans-CN;q=1, en-CN;q=0.9',
+        'Accept': '*/*',
+        'Date': time_369,
+        'CityId': '2500',
+        'User-Agent': 'Mozilla/5.0 (iPhone; CPU iPhone OS 14_6 like Mac OS X; iPhone_SE) Cx369iOS/7200 NetType/WIFI DarkMode/1 BlindMode/0',
+        'Geo': '',
+        'Authorization': 'Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6IiIsInJvbGUiOiJWaXNpdG9yLFVzZXIiLCJuYW1laWQiOiIxMDY0NjY5IiwianRpIjoiYTVjZTY1YTUtZjBhZC00MWQ0LTk5NDMtODA1OTcxZmJkZTEwIiwibmJmIjoxNjQ2MzE4MTAwLCJleHAiOjE2NDg5MTAxMDAsImlhdCI6MTY0NjMxODEwMCwiaXNzIjoid2ViLjM2OWN4LmNuIiwiYXVkIjoiYXBpLndlYi4zNjljeC5jbiJ9.VMWhSrq21hywz-4BS7SwOHUV3H3aQ0rVR-b7kHbmplMZ2Cv3rmuGd-z7HMwuurOh-YbDiuQIwXPRlGA1LmReDWTp9i7D0UAV_klurvePO9CY-NzmHl-jjAyAajseGsbA_WL0lAcf-YZkJ4OK486JGgJ7s-6xYk16lrck15d7zpqjGQTlJz8c5A0jiiIW4Sj1hmzFmEeqISSuFTRr533hqn8j95mb_5xvscyYdyYkn0cmleWunvzBnNjNeRS-ymdECIPzIa46ZX5ImdgSKZnExz9AIjNC0HF_FJPi-3eUMcNCtB18AaaIFZj1E5F9wrk3wmfO9Mj-c9ZDPriduQtslg',
+        'Sign': sign_7207
     }
     surl = b'aHR0cHM6Ly9hcGkuMzY5Y3guY24vdjIvSW50ZWdyYWwvRGF5bHlTaWdu'
     url = base64.b64decode( surl ).decode()
@@ -102,7 +104,7 @@ def sljsign8291(sign_8291):
     headers = {
         'Host': 'api.369cx.cn',
         'user-agent': 'Mozilla/5.0 (Linux; Android 6.0.1; Xiaomi/Redmi 4) Cx369Android/7100 NetType/WIFI BusQrCodeSdkVersion/4 DarkMode/0 CityId/2500',
-        'authorization': 'Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6IiIsInJvbGUiOiJWaXNpdG9yLFVzZXIiLCJuYW1laWQiOiIxMDY0NzI2IiwianRpIjoiYjI0OWFlOTMtMWFhOS00ZGU0LTkzOTQtYTczYjc4YzRjMGZlIiwibmJmIjoxNjQxNjExODU4LCJleHAiOjE2NDQyMDM4NTgsImlhdCI6MTY0MTYxMTg1OCwiaXNzIjoid2ViLjM2OWN4LmNuIiwiYXVkIjoiYXBpLndlYi4zNjljeC5jbiJ9.Z_KHASsbjTK6zqFbJYfw_ji2-cUuewiYFfSJ4jPHbQfpx2j2fenYPgxIx_2ZNIYJaTuugw2M3IPSVaRyr-WnIuwoMIrcWtuTJaJ6NkneGpesp37Qb4OuOviViY8y8PYlXWnja6Un8Ebdb_opGRVI6VBgzuZ7Uev7b1rvxI1q8UhHO8pC2KT_oM5fOY1FI2s8XJO9PcM3sx9_YxyKygzJSHcHeGd7B3ct4y2iDrCgbAKXKIt8nXu2oVniJgX4kHFI3oih871WfP9GPmIElieitlD_zSmdf5fBqKJ96q5fucLivz74nhh0zGp0u30fLtzbgDrdeRh1XWS5egxBV5J0CA',
+        'Authorization': 'Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6IiIsInJvbGUiOiJWaXNpdG9yLFVzZXIiLCJuYW1laWQiOiIxMDY0NzI2IiwianRpIjoiMjUwOTM3YzYtNzUzYy00OGRiLTgzMTYtNDNkMDc5ZjA5ODJmIiwibmJmIjoxNjQ2MzE3OTc3LCJleHAiOjE2NDg5MDk5NzcsImlhdCI6MTY0NjMxNzk3NywiaXNzIjoid2ViLjM2OWN4LmNuIiwiYXVkIjoiYXBpLndlYi4zNjljeC5jbiJ9.JgG52m0UNlPFdCd4St_o7-Ib0fCRLkUyiIT88R-ZBG9mmDddYZ1UyIfWTHmVOO-i1008O1pmG9fNmJ61lE9DNdXH5OPaF6Vkvjxa0xRdDHLXKKM6jLsYd_st6qh-Ew5WQt2_l8ER8hOx0YXeYbwQrGcmmUNufVUyWcN8Hb2IJhnkDV1Fxd2C-SL71WJf_ftpIZlybrkuFCxToOIhEAf87lOBSgwMJkGPiUB5cHK4ogg4jiqn9u6dWaIVpKiTCOVdMPAN-jt7uPmz55BGA_RalfZPqKeDwL4Y9cs7mWqjS48Tlghtp51GRqXljQ9YlNe2X-glVqxZOtb1-LdBgxOuUw',       
         'sign': sign_8291,
         'cityid': '2500',
         'date': time_369,
@@ -312,8 +314,8 @@ if __name__ == '__main__':
     sljsign8958(sign_8958)
     sljsign2695(sign_2695)
     sljsign0883(sign_0883)
-#     sljsign7207(sign_7207)
-#     sljsign8291(sign_8291)
+    sljsign7207(sign_7207)
+    sljsign8291(sign_8291)
 
 
  
