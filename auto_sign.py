@@ -308,6 +308,7 @@ if __name__ == '__main__':
     utc_now = datetime.utcnow().replace(tzinfo=timezone.utc)
     beijing_now = utc_now.astimezone(SHA_TZ)
     print(beijing_now, beijing_now.tzname())
+    print(beijing_now.strftime('%Y-%m-%d %H:%M:%S.%f'))
     
     smzdm()  
     sljsign7206(sign_7206)
