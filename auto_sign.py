@@ -79,7 +79,36 @@ def hfgoSign(atpAuthToken, mobile, userId, userSig):
     print(response.text)
     # log_print("话费够：" + response.text)
 
+def seven(resp):
+    resp1 = json.loads(resp)
+    cnt = resp1['result']['totalKeepSign']
+    if (cnt == 0):
+        del resp1['result']['daylySigns']
+        print(resp1)
+    if (cnt > 0 and cnt % 7 == 0):
+        url = resp1['status']['msg']
+        # msg = urllib.parse.unquote(msg)
+        url = url.replace("正在加载砸金蛋页面|", "")
+        url = url.replace("jngj.369cx.cn/duiba.html", "zzczsm.sdzhx.com.cn/duiba/api/login")
 
+        headers.pop('cityid')
+        headers.pop('geo')
+        headers.pop('sign')
+        headers.pop('date')
+        headers['Host'] = 'zzczsm.sdzhx.com.cn'
+        headers['content-type'] = 'application/json'
+        headers['accept'] = 'application/json'
+        headers['x-requested-with'] = 'XMLHttpRequest'
+        headers['accept-language'] = 'zh-cn'
+        headers['origin'] = 'https://jngj.369cx.cn'
+        headers['referer'] = 'https://jngj.369cx.cn/'
+        headers['x-access-token'] = headers.get('authorization').replace("Bearer ", "")
+
+        response = requests.get(url, headers=headers)
+        print(response.text)
+    else:
+        del resp1['result']['daylySigns']
+        print(resp1)
 
 def sljsign7207(sign_7207):
     time_369 = time.strftime("%a, %d %b %Y %H:%M:%S GMT", time.localtime())
@@ -97,7 +126,7 @@ def sljsign7207(sign_7207):
     surl = b'aHR0cHM6Ly9hcGkuMzY5Y3guY24vdjIvSW50ZWdyYWwvRGF5bHlTaWdu'
     url = base64.b64decode( surl ).decode()
     response = requests.get(url, headers=headers)
-    print(response.text)
+    seven(response.text)
 
 def sljsign8291(sign_8291):
     time_369 = time.strftime("%a, %d %b %Y %H:%M:%S GMT", time.localtime())
@@ -113,7 +142,7 @@ def sljsign8291(sign_8291):
     surl = b'aHR0cHM6Ly9hcGkuMzY5Y3guY24vdjIvSW50ZWdyYWwvRGF5bHlTaWdu'
     url = base64.b64decode( surl ).decode()
     response = requests.get(url, headers=headers)
-    print(response.text)
+    seven(response.text)
     
 def sljsign8958(sign_8958):
     time_369 = time.strftime("%a, %d %b %Y %H:%M:%S GMT", time.localtime())
@@ -129,7 +158,7 @@ def sljsign8958(sign_8958):
     surl = b'aHR0cHM6Ly9hcGkuMzY5Y3guY24vdjIvSW50ZWdyYWwvRGF5bHlTaWdu'
     url = base64.b64decode( surl ).decode()
     response = requests.get(url, headers=headers)
-    print(response.text)
+    seven(response.text)
 
 def sljsign7206(sign_7206):
     time_369 = time.strftime("%a, %d %b %Y %H:%M:%S GMT", time.localtime())
@@ -145,7 +174,7 @@ def sljsign7206(sign_7206):
     surl = b'aHR0cHM6Ly9hcGkuMzY5Y3guY24vdjIvSW50ZWdyYWwvRGF5bHlTaWdu'
     url = base64.b64decode( surl ).decode()
     response = requests.get(url, headers=headers)
-    print(response.text)
+    seven(response.text)
     
 def sljsign0883(sign):
     time_369 = time.strftime("%a, %d %b %Y %H:%M:%S GMT", time.localtime())
@@ -165,7 +194,7 @@ def sljsign0883(sign):
     surl = b'aHR0cHM6Ly9hcGkuMzY5Y3guY24vdjIvSW50ZWdyYWwvRGF5bHlTaWdu'
     url = base64.b64decode( surl ).decode()
     response = requests.get(url, headers=headers)
-    print(response.text)
+    seven(response.text)
 
 def sljsign2695(sign):
     time_369 = time.strftime("%a, %d %b %Y %H:%M:%S GMT", time.localtime())
@@ -185,7 +214,7 @@ def sljsign2695(sign):
     surl = b'aHR0cHM6Ly9hcGkuMzY5Y3guY24vdjIvSW50ZWdyYWwvRGF5bHlTaWdu'
     url = base64.b64decode( surl ).decode()
     response = requests.get(url, headers=headers)
-    print(response.text)
+    seven(response.text)
 
 def yhsign(memberid, access_token, deviceid, sign):
     time_yh = int(round(time.time() * 1000))
