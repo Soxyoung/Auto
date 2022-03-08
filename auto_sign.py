@@ -92,10 +92,10 @@ def seven(resp, headers):
         url = url.replace("正在加载砸金蛋页面|", "")
         url = url.replace("jngj.369cx.cn/duiba.html", "zzczsm.sdzhx.com.cn/duiba/api/login")
 
-        headers.pop('cityid')
-        headers.pop('geo')
-        headers.pop('sign')
-        headers.pop('date')
+        headers.pop('cityid', '')
+        headers.pop('geo', '')
+        headers.pop('sign', '')
+        headers.pop('date', '')
         headers['Host'] = 'zzczsm.sdzhx.com.cn'
         headers['content-type'] = 'application/json'
         headers['accept'] = 'application/json'
