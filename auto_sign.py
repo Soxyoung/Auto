@@ -346,26 +346,32 @@ if __name__ == '__main__':
     smzdm()
     
     try:
+        print("----7206----")
         sljsign7206(sign_7206)
     except Exception as e:
         print(e)
     try:
+        print("----8958----")
         sljsign8958(sign_8958)
     except Exception as e:
         print(e)
     try:
+        print("----2695----")
         sljsign2695(sign_2695)
     except Exception as e:
         print(e)
     try:
+        print("----0883----")
         sljsign0883(sign_0883)
     except Exception as e:
         print(e)
     try:
+        print("----7207----")
         sljsign7207(sign_7207)
     except Exception as e:
         print(e)
     try:
+        print("----8291----")
         sljsign8291(sign_8291)
     except Exception as e:
         print(e)
