@@ -95,6 +95,7 @@ def seven(resp, headers):
 #         print(resp1)
         url = resp1['status']['msg']
         # msg = urllib.parse.unquote(msg)
+        print(url)
         url = url.replace("正在加载砸金蛋页面|", "")
         url = url.replace("jngj.369cx.cn/duiba.html", "zzczsm.sdzhx.com.cn/duiba/api/login")
 
