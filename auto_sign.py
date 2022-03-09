@@ -82,12 +82,17 @@ def hfgoSign(atpAuthToken, mobile, userId, userSig):
 
 def seven(resp, headers):
     resp1 = json.loads(resp)
+    try:
+        del resp1['result']['daylySigns']
+    finally:
+        print resp1
+        
     cnt = resp1['result']['totalKeepSign']
     if (cnt == 0):
         del resp1['result']['daylySigns']
-        print(resp1)
+#         print(resp1)
     if (cnt > 0 and cnt % 7 == 0):
-        print(resp1)
+#         print(resp1)
         url = resp1['status']['msg']
         # msg = urllib.parse.unquote(msg)
         url = url.replace("正在加载砸金蛋页面|", "")
@@ -108,10 +113,7 @@ def seven(resp, headers):
 
         response = requests.get(url, headers=headers)
         print(response.text)
-    else:
-        del resp1['result']['daylySigns']
-        print(resp1)
-
+  
 def sljsign7207(sign_7207):
     time_369 = time.strftime("%a, %d %b %Y %H:%M:%S GMT", time.localtime())
     headers = {
