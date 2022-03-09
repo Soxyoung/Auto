@@ -340,13 +340,32 @@ if __name__ == '__main__':
     print(beijing_now, beijing_now.tzname())
     print(beijing_now.strftime('%Y-%m-%d %H:%M:%S.%f'))
     
-    smzdm()  
-    sljsign7206(sign_7206)
-    sljsign8958(sign_8958)
-    sljsign2695(sign_2695)
-    sljsign0883(sign_0883)
-    sljsign7207(sign_7207)
-    sljsign8291(sign_8291)
+    smzdm()
+    
+    try:
+        sljsign7206(sign_7206)
+    except Exception as e:
+        print(e)
+    try:
+        sljsign8958(sign_8958)
+    except Exception as e:
+        print(e)
+    try:
+        sljsign2695(sign_2695)
+    except Exception as e:
+        print(e)
+    try:
+        sljsign0883(sign_0883)
+    except Exception as e:
+        print(e)
+    try:
+        sljsign7207(sign_7207)
+    except Exception as e:
+        print(e)
+    try:
+        sljsign8291(sign_8291)
+    except Exception as e:
+        print(e)
 
 
  
