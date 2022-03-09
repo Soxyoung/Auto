@@ -85,7 +85,7 @@ def seven(resp, headers):
     try:
         del resp1['result']['daylySigns']
     finally:
-        print resp1
+        print(resp1)
         
     cnt = resp1['result']['totalKeepSign']
     if (cnt == 0):
