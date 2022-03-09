@@ -87,6 +87,7 @@ def seven(resp, headers):
         del resp1['result']['daylySigns']
         print(resp1)
     if (cnt > 0 and cnt % 7 == 0):
+        print(resp1)
         url = resp1['status']['msg']
         # msg = urllib.parse.unquote(msg)
         url = url.replace("正在加载砸金蛋页面|", "")
