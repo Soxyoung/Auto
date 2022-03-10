@@ -84,6 +84,7 @@ def seven(resp, headers):
 
     if (resp.find("未登录") >= 0):
         print(resp)
+        return resp
     else:
 
         try:
@@ -114,12 +115,15 @@ def seven(resp, headers):
 
                 response = requests.get(url, headers=headers)
                 print(response.text)
+                return response.text
             else:
                 print(resp1)
+                return str(resp1)
 
         except:
             print("-----------------------")
             print(resp)
+            return resp
             print("-----------------------")
   
 def sljsign7207(sign_7207):
