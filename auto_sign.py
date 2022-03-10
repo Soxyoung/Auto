@@ -81,6 +81,9 @@ def hfgoSign(atpAuthToken, mobile, userId, userSig):
     # log_print("话费够：" + response.text)
 
 def seven(resp, headers):
+    
+    print(resp)
+    
     resp1 = json.loads(resp)
     try:
         del resp1['result']['daylySigns']
