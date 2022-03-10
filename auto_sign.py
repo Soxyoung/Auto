@@ -142,7 +142,7 @@ def sljsign7207(sign_7207):
     surl = b'aHR0cHM6Ly9hcGkuMzY5Y3guY24vdjIvSW50ZWdyYWwvRGF5bHlTaWdu'
     url = base64.b64decode( surl ).decode()
     response = requests.get(url, headers=headers)
-    seven(response.text, headers)
+    return seven(response.text, headers)
 
 def sljsign8291(sign_8291):
     time_369 = time.strftime("%a, %d %b %Y %H:%M:%S GMT", time.localtime())
@@ -158,7 +158,7 @@ def sljsign8291(sign_8291):
     surl = b'aHR0cHM6Ly9hcGkuMzY5Y3guY24vdjIvSW50ZWdyYWwvRGF5bHlTaWdu'
     url = base64.b64decode( surl ).decode()
     response = requests.get(url, headers=headers)
-    seven(response.text, headers)
+    return seven(response.text, headers)
     
 def sljsign8958(sign_8958):
     time_369 = time.strftime("%a, %d %b %Y %H:%M:%S GMT", time.localtime())
@@ -174,7 +174,7 @@ def sljsign8958(sign_8958):
     surl = b'aHR0cHM6Ly9hcGkuMzY5Y3guY24vdjIvSW50ZWdyYWwvRGF5bHlTaWdu'
     url = base64.b64decode( surl ).decode()
     response = requests.get(url, headers=headers)
-    seven(response.text, headers)
+    return seven(response.text, headers)
 
 def sljsign7206(sign_7206):
     time_369 = time.strftime("%a, %d %b %Y %H:%M:%S GMT", time.localtime())
@@ -190,7 +190,7 @@ def sljsign7206(sign_7206):
     surl = b'aHR0cHM6Ly9hcGkuMzY5Y3guY24vdjIvSW50ZWdyYWwvRGF5bHlTaWdu'
     url = base64.b64decode( surl ).decode()
     response = requests.get(url, headers=headers)
-    seven(response.text, headers)
+    return seven(response.text, headers)
     
 def sljsign0883(sign):
     time_369 = time.strftime("%a, %d %b %Y %H:%M:%S GMT", time.localtime())
@@ -210,7 +210,7 @@ def sljsign0883(sign):
     surl = b'aHR0cHM6Ly9hcGkuMzY5Y3guY24vdjIvSW50ZWdyYWwvRGF5bHlTaWdu'
     url = base64.b64decode( surl ).decode()
     response = requests.get(url, headers=headers)
-    seven(response.text, headers)
+    return seven(response.text, headers)
 
 def sljsign2695(sign):
     time_369 = time.strftime("%a, %d %b %Y %H:%M:%S GMT", time.localtime())
@@ -230,7 +230,7 @@ def sljsign2695(sign):
     surl = b'aHR0cHM6Ly9hcGkuMzY5Y3guY24vdjIvSW50ZWdyYWwvRGF5bHlTaWdu'
     url = base64.b64decode( surl ).decode()
     response = requests.get(url, headers=headers)
-    seven(response.text, headers)
+    return seven(response.text, headers)
 
 def yhsign(memberid, access_token, deviceid, sign):
     time_yh = int(round(time.time() * 1000))
