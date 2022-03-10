@@ -338,6 +338,8 @@ if __name__ == '__main__':
     sign_8958 = sys.argv[14]
     sign_2695 = sys.argv[15]
     sign_0883 = sys.argv[16]
+    
+    
 
     # 话费够
     # hfgoSign(atpAuthToken, mobile, userId, userSig)
@@ -357,36 +359,52 @@ if __name__ == '__main__':
     
     smzdm()
     
+    rst = beijing_now.strftime('%Y-%m-%d %H:%M:%S.%f')
+    
     try:
         print("----7206----")
-        sljsign7206(sign_7206)
+        rst_7206 = sljsign7206(sign_7206)
+        rst += rst_7206 + '\n'
     except Exception as e:
         print(e)
     try:
         print("----8958----")
-        sljsign8958(sign_8958)
+        rst_8958 = sljsign8958(sign_8958)
+        rst += rst_8958 + '\n'
     except Exception as e:
         print(e)
     try:
         print("----2695----")
-        sljsign2695(sign_2695)
+        rst_2695 = sljsign2695(sign_2695)
+        rst += rst_2695 + '\n'
     except Exception as e:
         print(e)
     try:
         print("----0883----")
-        sljsign0883(sign_0883)
+        rst_0883 = sljsign0883(sign_0883)
+        rst += rst_0883 + '\n'
     except Exception as e:
         print(e)
     try:
         print("----7207----")
-        sljsign7207(sign_7207)
+        rst_7207 = sljsign7207(sign_7207)
+        rst += rst_7207 + '\n'
     except Exception as e:
         print(e)
     try:
         print("----8291----")
-        sljsign8291(sign_8291)
+        rst_8291 = sljsign8291(sign_8291)
+        rst += rst_8291 + '\n'
     except Exception as e:
         print(e)
 
+    api = "https://sc.ftqq.com/SCT128241Tk0T25aj6PpO0iE47m7ZzFXaV.send"
+    title = u"369签到"
+    content = rst
+    data = {
+       "text":title,
+       "desp":content
+    }
+    req = requests.post(api,data = data)
 
  
