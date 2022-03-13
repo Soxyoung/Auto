@@ -164,12 +164,14 @@ def sljsign8958(sign_8958):
     time_369 = time.strftime("%a, %d %b %Y %H:%M:%S GMT", time.localtime())
     headers = {
         'Host': 'api.369cx.cn',
-        'user-agent': 'Mozilla/5.0 (Linux; Android 6.0.1; Xiaomi/Redmi 4) Cx369Android/7200 NetType/WIFI BusQrCodeSdkVersion/4 DarkMode/0 CityId/2500',
-        'authorization': 'Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6IiIsInJvbGUiOiJWaXNpdG9yLFVzZXIiLCJuYW1laWQiOiIxMDg3Nzk1IiwianRpIjoiODA5NDc3NjgtNjhlNy00ZWVkLTg3ZDctOWUxODkxM2Q5Y2EyIiwibmJmIjoxNjQ0MTU4OTgwLCJleHAiOjE2NDY3NTA5ODAsImlhdCI6MTY0NDE1ODk4MCwiaXNzIjoid2ViLjM2OWN4LmNuIiwiYXVkIjoiYXBpLndlYi4zNjljeC5jbiJ9.jDfeuy805nDOFa1liyf38L1TCeZjg1TiL59s6qx6Su4RKKcyKJkZYUFdnd4ul--zoxsHKakW5LTqH5YODh2Rc-UN-FsUmj4xW1Yw1GugHF1F5rnzEFUHE7h4tuy6VzHfYaHnQxo1yHJgNoszq-2NKmbbBWuuICiIZUd6bv0nPzRe_BCCqFqy4o5zg2HBDGrxo_xWRkB3MaeWhKmNBMk8EuJLoscT9wQJ8l4dhEuW_Y-GVAu-SccQlkwjwRbnHkhLxx0gGMXNaUCcbKNLE7rNBMA5DpAXxuCmD5N-PmYile4yRNDjYMVJStmwooIln72cf2zEIgbN4_vj446mZ9bSxQ',
-        'sign': sign_8958,
         'cityid': '2500',
+        'accept': '*/*',
+        'geo': 'F%DHIY0',
+        'authorization': 'Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6IiIsInJvbGUiOiJWaXNpdG9yLFVzZXIiLCJuYW1laWQiOiIxMDg3Nzk1IiwianRpIjoiOWNjMjY1YzQtNDZjNC00YzJmLWIxYWYtNTUyYTQ2YTNkYjk1IiwibmJmIjoxNjQ3MTg1NDcyLCJleHAiOjE2NDk3Nzc0NzIsImlhdCI6MTY0NzE4NTQ3MiwiaXNzIjoid2ViLjM2OWN4LmNuIiwiYXVkIjoiYXBpLndlYi4zNjljeC5jbiJ9.Jmmuhi7G9WGfZb6mJ4xXmV0nJkqLNcCduHhCLhydlqQ9yObDkAGT27y-kZx3M3UYmwzikBRjWkXFmQ1Rzxj_k_IJGHeoeHLJHiP3sCqpBmmzi5ETaRnVKjbAnqDR9-2yNHBub1AMBlnxI3Z3KQJfK-sEApyfXWTlAPlH_BecTHJlfJ9thDyOJgHEZa747P6hf3Z5A2sbR2ahEVyPwTxZLq238xvh1KFrarDmatTwAuUi7bGsBpPknLcazfgdNt8IZWrnAb83P2sMdewAyz2n8mNQ1F0m2l5yRYfBO4StLJcByKjUG6de26igX-Mg6tWtZFgw1_xMTaeMd8OzanJ0EQ',
+        'sign': '458ff896d34f997b49175f83ace7cf81',
         'date': time_369,
-        'accept-encoding': 'gzip',
+        'accept-language': 'zh-Hans-CN;q=1, en-CN;q=0.9',
+        'user-agent': 'Mozilla/5.0 (iPhone; CPU iPhone OS 14_6 like Mac OS X; iPhone_SE) Cx369iOS/7200 NetType/WIFI DarkMode/1 BlindMode/0',
     }
     surl = b'aHR0cHM6Ly9hcGkuMzY5Y3guY24vdjIvSW50ZWdyYWwvRGF5bHlTaWdu'
     url = base64.b64decode( surl ).decode()
@@ -180,12 +182,14 @@ def sljsign7206(sign_7206):
     time_369 = time.strftime("%a, %d %b %Y %H:%M:%S GMT", time.localtime())
     headers = {
         'Host': 'api.369cx.cn',
-        'user-agent': 'Mozilla/5.0 (Linux; Android 6.0.1; Xiaomi/Redmi 4) Cx369Android/7200 NetType/4G BusQrCodeSdkVersion/4 DarkMode/0 CityId/2500',
-        'authorization': 'Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6IiIsInJvbGUiOiJWaXNpdG9yLFVzZXIiLCJuYW1laWQiOiIxMDg3Nzk4IiwianRpIjoiOWNmYWYxYTctMmI3My00NTZhLWJjNjUtYmVjYzA2NDJkYmQxIiwibmJmIjoxNjQ0MTU5OTc2LCJleHAiOjE2NDY3NTE5NzYsImlhdCI6MTY0NDE1OTk3NiwiaXNzIjoid2ViLjM2OWN4LmNuIiwiYXVkIjoiYXBpLndlYi4zNjljeC5jbiJ9.Jtc-hDW6EugwCGsP3ATkZWJ_G-wVEL9OlNT4xEG94n0oQ5z42ybrjr7AKzfCHJuxUlcxB2aCKNm6aHdyfsxKVGmPzvsl5Y-avqQoqxKX6_yxgTOV52HEBVjHFCctmvILE6m1FasHg-VYVSwA903IovjvhSVFbfM7yNBOlU381TJYT4oXNmjCNotyN6fI4g1xrqQVc9O0d1fAKcK-HbI3k8i1GQdKYqDAiZCdW-9tTaA3AgU1OcHiNa1Fi4xAkjo17_ht8DCdq0z7KbiDXtwZlNwP1yrp_2BqEj-Lq_ekYZp2hW_rMN_XBEIvH1WNFVTTYs3k8yWjrGR6lsXX5oWI5A',
-        'sign': sign_7206,
         'cityid': '2500',
+        'accept': '*/*',
+        'geo': 'F%DHIY0',
+        'authorization': 'Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6IiIsInJvbGUiOiJWaXNpdG9yLFVzZXIiLCJuYW1laWQiOiIxMDg3Nzk4IiwianRpIjoiYWQ1YTcwZTMtMDYzNi00NWQ5LTk2NjItYmZmMWMwOWJlZjAwIiwibmJmIjoxNjQ3MTg1MjM3LCJleHAiOjE2NDk3NzcyMzcsImlhdCI6MTY0NzE4NTIzNywiaXNzIjoid2ViLjM2OWN4LmNuIiwiYXVkIjoiYXBpLndlYi4zNjljeC5jbiJ9.ITRJTf83d9ens6XjxsulgxpC_FBkOybBVCGdpQESDQzrEFugsZef2FiRtjAIZpDu0ieVrfS8uA_IuKfg8aPfUKK73cqRvv0bt-EkxeIAQhZNLnWx7WUkJm1kcGioBc4jjkYyLiM0jfjXFiaC5uZt3iF8_m-hYxByWWJSW88Oq_Qd2ATaUZ83jcmoYO7WNeSwQP6CvWD9bM9Fp9CovcMis-jIjIowS9UyNhicpDY17MTbgzqfVnzVzXn162TPsIvgDo4XeUw6AoJf-SuwMa_FZSZmHuvJhhAUONULmXh-7ikXAXbuLq1hdbxhlgFBWR1hGc2sO-0Fxufu4lewaMmSNg',
+        'sign': '458ff896d34f997b49175f83ace7cf81',
         'date': time_369,
-        'accept-encoding': 'gzip',
+        'accept-language': 'zh-Hans-CN;q=1, en-CN;q=0.9',
+        'user-agent': 'Mozilla/5.0 (iPhone; CPU iPhone OS 14_6 like Mac OS X; iPhone_SE) Cx369iOS/7200 NetType/WIFI DarkMode/1 BlindMode/0',
     }
     surl = b'aHR0cHM6Ly9hcGkuMzY5Y3guY24vdjIvSW50ZWdyYWwvRGF5bHlTaWdu'
     url = base64.b64decode( surl ).decode()
@@ -219,9 +223,9 @@ def sljsign2695(sign):
         'Host': 'api.369cx.cn',
         'cityid': '2500',
         'accept': '*/*',
-        'geo': 'F$\'(CF2',
-        'authorization': 'Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6IiIsInJvbGUiOiJWaXNpdG9yLFVzZXIiLCJuYW1laWQiOiIxMDg3NTI1IiwianRpIjoiMzY4YTQ1MDctMTBkOC00ZDQxLWIzNjQtZGYzNzYxODdjMTZlIiwibmJmIjoxNjQ0MjQ1NDQ4LCJleHAiOjE2NDY4Mzc0NDgsImlhdCI6MTY0NDI0NTQ0OCwiaXNzIjoid2ViLjM2OWN4LmNuIiwiYXVkIjoiYXBpLndlYi4zNjljeC5jbiJ9.TxfhfOyaVdebegwNFbAs17KCn8SvxrRyWTfStO83_PMTs7pwLplLHSbtKibHqW1KxPPl1vtCSQm3z6RSYi2mukS7p04zBk6CA-fJIhLMeveriCCZg8wVMeZcEzI9E1v7twxE_QvbPQ6_3PrCnip1Lumvod7btopWOo1dQEwatZ6kv42BoYyfirQQoFsrGcUVNfOjV0bDYn5pWswa_b0FyjxtV9GNlfXTKrQrVpcQKZD63OYJeAef0l1DRmEmIAOdfPhtQdJT_SaQW02r2S8Gy2LANdPibRgekD-zudjl4rpd2eiydIFOBRADFNf-UtBU6hGR3TE380RMdK27Y0CrwA',
-        'sign': sign,
+        'geo': 'F%DHIY0',
+        'authorization': 'Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6IiIsInJvbGUiOiJWaXNpdG9yLFVzZXIiLCJuYW1laWQiOiIxMDg3NTI1IiwianRpIjoiODZkYjRhZTktOGVhNS00NGRkLWE1ODAtMTAyNWU3ODRlZWQ3IiwibmJmIjoxNjQ3MTgyODY4LCJleHAiOjE2NDk3NzQ4NjgsImlhdCI6MTY0NzE4Mjg2OCwiaXNzIjoid2ViLjM2OWN4LmNuIiwiYXVkIjoiYXBpLndlYi4zNjljeC5jbiJ9.Gh445mywNP8fcCWoE-Xq6wFHZtk-zXRB3ND53FvxN3vewQ2mpS7yL44aUzslwt51OwAclaQvzaH9oQl7BvyA5w5PMAYafTUmel0ec4QU7VYCiFs6okR4D_CNqB79F5XkdloeQyjXpRLLX73q79Dbcb5VQEZdlZab1Pfnt0XghcTtWs7wnUoa578vD2mkwcUNoW6UZ8vsZ2O_tJwEFXOPfMwy1TVcUlVWFcFuQiodz2Qg_L1TCtwabsNFUI_bkhY1R5P3frS7Ys1vUZUMbZWmP9v3ORIbs4f8t2xW2mK5lOdjnUbV3xfN2sqQJGM8W5t4JLFP1s5Y6xB54YDLOIwfwQ',
+        'sign': '458ff896d34f997b49175f83ace7cf81',
         'date': time_369,
         'accept-language': 'zh-Hans-CN;q=1, en-CN;q=0.9',
         'user-agent': 'Mozilla/5.0 (iPhone; CPU iPhone OS 14_6 like Mac OS X; iPhone_SE) Cx369iOS/7200 NetType/WIFI DarkMode/1 BlindMode/0',
