@@ -364,6 +364,7 @@ if __name__ == '__main__':
     smzdm()
     
     rst = beijing_now.strftime('%Y-%m-%d %H:%M:%S.%f')
+    rst += '\n\r\n'
     
     try:
         print("----7206----")
