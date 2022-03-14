@@ -135,7 +135,7 @@ def sljsign7207(sign_7207):
         'Date': time_369,
         'CityId': '2500',
         'User-Agent': 'Mozilla/5.0 (iPhone; CPU iPhone OS 14_6 like Mac OS X; iPhone_SE) Cx369iOS/7200 NetType/WIFI DarkMode/1 BlindMode/0',
-        'Geo': '',
+
         'Authorization': 'Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6IiIsInJvbGUiOiJWaXNpdG9yLFVzZXIiLCJuYW1laWQiOiIxMDY0NjY5IiwianRpIjoiYTVjZTY1YTUtZjBhZC00MWQ0LTk5NDMtODA1OTcxZmJkZTEwIiwibmJmIjoxNjQ2MzE4MTAwLCJleHAiOjE2NDg5MTAxMDAsImlhdCI6MTY0NjMxODEwMCwiaXNzIjoid2ViLjM2OWN4LmNuIiwiYXVkIjoiYXBpLndlYi4zNjljeC5jbiJ9.VMWhSrq21hywz-4BS7SwOHUV3H3aQ0rVR-b7kHbmplMZ2Cv3rmuGd-z7HMwuurOh-YbDiuQIwXPRlGA1LmReDWTp9i7D0UAV_klurvePO9CY-NzmHl-jjAyAajseGsbA_WL0lAcf-YZkJ4OK486JGgJ7s-6xYk16lrck15d7zpqjGQTlJz8c5A0jiiIW4Sj1hmzFmEeqISSuFTRr533hqn8j95mb_5xvscyYdyYkn0cmleWunvzBnNjNeRS-ymdECIPzIa46ZX5ImdgSKZnExz9AIjNC0HF_FJPi-3eUMcNCtB18AaaIFZj1E5F9wrk3wmfO9Mj-c9ZDPriduQtslg',
         'Sign': sign_7207
     }
@@ -204,8 +204,8 @@ def sljsign0883(sign):
         'cityid': '2500',
         'accept': '*/*',
         'geo': 'F%QTj#s',
-        'authorization': 'Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6IiIsInJvbGUiOiJWaXNpdG9yLFVzZXIiLCJuYW1laWQiOiI4NzEyODkiLCJqdGkiOiJlOTI1MzI4OC1hZmVhLTQyNGItYWZjZC01NGNlMGVkOGM2YjciLCJuYmYiOjE2NDQyNzg2NzYsImV4cCI6MTY0Njg3MDY3NiwiaWF0IjoxNjQ0Mjc4Njc2LCJpc3MiOiJ3ZWIuMzY5Y3guY24iLCJhdWQiOiJhcGkud2ViLjM2OWN4LmNuIn0.Rf_UIp4xEIKzvw-_UnvYMgMrWPKx6aEZGRw-Rmx8taB4-REg5DdpDooHVttTDYPTaRTIw9MXxQzRLWNJmXn8LvIH1Z26w2EPAKF_dT9lJ4yAAmZ-VdlprKnwpbRcPPBxsJ7khvbNLykJLnlZ0MZ29ViZzeYUyBV637fwQP6JnIPfaPkSDmxq7DlBKwdt03Fihi0aWaWGAM4fLOdABZE75H11JtoaOWAUYAq87dYueaRDOOQZQgI1n_Cn809FHiEVxtg20bsoJuRYgKGiYNvyyDv4Nr0nkUkiHIMYiM4k0CdBgVmepSWGJuQ9qKhSS9DxCH7odnTcMuPhYbiWENGvjg',
-        'sign': sign,
+        'authorization': 'Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6IiIsInJvbGUiOiJWaXNpdG9yLFVzZXIiLCJuYW1laWQiOiIxMTIzNTA0IiwianRpIjoiMDRmMTE2M2EtN2YzNS00NmI2LWFlYjgtODYyM2Y3NTA1NDM5IiwibmJmIjoxNjQ3MjM0OTUwLCJleHAiOjE2NDk4MjY5NTAsImlhdCI6MTY0NzIzNDk1MCwiaXNzIjoid2ViLjM2OWN4LmNuIiwiYXVkIjoiYXBpLndlYi4zNjljeC5jbiJ9.KvC6VzTsY3Qlyyv_4PnaqIogXB5VMLmqQP9UNf8jxqzsBdZMSoQrQW7ZloB-DxIOAokhl9dU7F-Hr8UeGRP5viLDRiCE63a93M1AOKsypIFNTz6lUdehfKa_3ZTuGK-rzB6QRxGFdrNGfaSsq3eU2nPFn9LBT5FP0RPgriPmzJ2-qtX4aykuBla-3C7uZditie1DIgozsOdv0f6tYUlXFwkrFKJBKMtXo-dRK2sh12gyMSj3L6hVdG5foj-PfbxXWg2PtDn7_3M41dj9gdBpUDaHZAJQmGRM9XkswSlcGTaVdkpor17rZGzocbvWu8PthUMi7zqnzP-OgQ2xaIx_IA',
+        'sign': 'a5e7516398c0e9d0a91e6e27d4a934aa',
         'date': time_369,
         'accept-language': 'zh-Hans-CN;q=1, en-CN;q=0.9',
         'user-agent': 'Mozilla/5.0 (iPhone; CPU iPhone OS 14_6 like Mac OS X; iPhone_SE) Cx369iOS/7200 NetType/WIFI DarkMode/1 BlindMode/0',
@@ -367,38 +367,44 @@ if __name__ == '__main__':
     
     try:
         print("----7206----")
+        rst += "----7206----" + '\n\r\n'
         rst_7206 = sljsign7206(sign_7206)
-        rst += rst_7206 + '\n'
+        rst += rst_7206 + '\n\r\n'
     except Exception as e:
         print(e)
     try:
         print("----8958----")
+        rst += "----8958----" + '\n\r\n'
         rst_8958 = sljsign8958(sign_8958)
-        rst += rst_8958 + '\n'
+        rst += rst_8958 + '\n\r\n'
     except Exception as e:
         print(e)
     try:
         print("----2695----")
+        rst += "----2695----" + '\n\r\n'
         rst_2695 = sljsign2695(sign_2695)
-        rst += rst_2695 + '\n'
+        rst += rst_2695 + '\n\r\n'
     except Exception as e:
         print(e)
     try:
         print("----0883----")
+        rst += "----0883----" + '\n\r\n'
         rst_0883 = sljsign0883(sign_0883)
-        rst += rst_0883 + '\n'
+        rst += rst_0883 + '\n\r\n'
     except Exception as e:
         print(e)
     try:
         print("----7207----")
+        rst += "----7207----" + '\n\r\n'
         rst_7207 = sljsign7207(sign_7207)
-        rst += rst_7207 + '\n'
+        rst += rst_7207 + '\n\r\n'
     except Exception as e:
         print(e)
     try:
         print("----8291----")
+        rst += "----8291----" + '\n\r\n'
         rst_8291 = sljsign8291(sign_8291)
-        rst += rst_8291 + '\n'
+        rst += rst_8291 + '\n\r\n'
     except Exception as e:
         print(e)
 
