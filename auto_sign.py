@@ -343,6 +343,8 @@ if __name__ == '__main__':
     sign_2695 = sys.argv[15]
     sign_0883 = sys.argv[16]
     
+    print(sign_7207)
+    print(sign_8291)
     
 
     # 话费够
