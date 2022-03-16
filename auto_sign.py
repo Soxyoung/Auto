@@ -79,6 +79,7 @@ def hfgoSign(atpAuthToken, mobile, userId, userSig):
     response = requests.get(url, headers=headers, params=params, cookies=cookies)
     print(response.text)
     # log_print("话费够：" + response.text)
+    
 def seven(resp, headers):
 
     if (resp.find("未登录") >= 0):
@@ -113,11 +114,14 @@ def seven(resp, headers):
                 token = headers.get('Authorization')
                 if (token == None):
                     token = headers.get('authorization')
+
                 headers['x-access-token'] = token.replace("Bearer ", "")
 
                 response = requests.get(url, headers=headers)
-                print(response.text)
-                return response.text
+                # print(response.text)
+                rst = json.loads(response.text)
+                print(rst["result"])
+                return rst["result"]
             else:
                 print(resp1)
                 return str(resp1)
@@ -125,8 +129,9 @@ def seven(resp, headers):
         except Exception as e:
             print("-----------------------")
             print(e)
-            print("-----------------------")
-            return resp            
+            print(resp)
+            return resp
+            print("-----------------------")           
   
 def sljsign7207(sign_7207):
     time_369 = time.strftime("%a, %d %b %Y %H:%M:%S GMT", time.localtime())
