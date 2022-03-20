@@ -367,39 +367,39 @@ if __name__ == '__main__':
     print(beijing_now, beijing_now.tzname())
     print(beijing_now.strftime('%Y-%m-%d %H:%M:%S.%f'))
     
-    smzdm()
+#     smzdm()
     
     rst = beijing_now.strftime('%Y-%m-%d %H:%M:%S.%f')
     rst += '\n\r\n'
     
-    try:
-        print("----7206----")
-        rst += "----7206----" + '\n\r\n'
-        rst_7206 = sljsign7206(sign_7206)
-        rst += rst_7206 + '\n\r\n'
-    except Exception as e:
-        print(e)
-    try:
-        print("----8958----")
-        rst += "----8958----" + '\n\r\n'
-        rst_8958 = sljsign8958(sign_8958)
-        rst += rst_8958 + '\n\r\n'
-    except Exception as e:
-        print(e)
-    try:
-        print("----2695----")
-        rst += "----2695----" + '\n\r\n'
-        rst_2695 = sljsign2695(sign_2695)
-        rst += rst_2695 + '\n\r\n'
-    except Exception as e:
-        print(e)
-    try:
-        print("----0883----")
-        rst += "----0883----" + '\n\r\n'
-        rst_0883 = sljsign0883(sign_0883)
-        rst += rst_0883 + '\n\r\n'
-    except Exception as e:
-        print(e)
+#     try:
+#         print("----7206----")
+#         rst += "----7206----" + '\n\r\n'
+#         rst_7206 = sljsign7206(sign_7206)
+#         rst += rst_7206 + '\n\r\n'
+#     except Exception as e:
+#         print(e)
+#     try:
+#         print("----8958----")
+#         rst += "----8958----" + '\n\r\n'
+#         rst_8958 = sljsign8958(sign_8958)
+#         rst += rst_8958 + '\n\r\n'
+#     except Exception as e:
+#         print(e)
+#     try:
+#         print("----2695----")
+#         rst += "----2695----" + '\n\r\n'
+#         rst_2695 = sljsign2695(sign_2695)
+#         rst += rst_2695 + '\n\r\n'
+#     except Exception as e:
+#         print(e)
+#     try:
+#         print("----0883----")
+#         rst += "----0883----" + '\n\r\n'
+#         rst_0883 = sljsign0883(sign_0883)
+#         rst += rst_0883 + '\n\r\n'
+#     except Exception as e:
+#         print(e)
     try:
         print("----7207----")
         rst += "----7207----" + '\n\r\n'
