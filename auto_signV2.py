@@ -85,12 +85,20 @@ def smzdm():
     print(response.text)
 
 def sendSeverJ(sendKey, title, content):
-    api = "https://sc.ftqq.com/" + sendKey + ".send"
-    data = {
-       "text":title,
-       "desp":content
-    }
-    req = requests.post(api, data = data)
+    try:
+        if (content.find("duiba") < 0):
+            print(content)
+            return
+        api = "https://sc.ftqq.com/" + sendKey + ".send"
+        data = {
+            "text": title,
+            "desp": content
+        }
+        req = requests.post(api, data=data)
+    except Exception as e:
+        print("-----------------------")
+        print("发送微信消息失败", e)
+        print("-----------------------")
 
 def seven(resp, headers):
 
