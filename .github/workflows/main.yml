@@ -9,10 +9,10 @@ on:
     branches: 
       - master
   # 可以设定定时任务执行
-  schedule:
+#   schedule:
     # UTC 0 点 30 定期执行一次，跟北京时间大概相距8小时，但因为排队可能会稍微延后半小时左右
     # 即北京时间 8 点 30 以后
-    - cron: '34 22 * * *'
+#     - cron: '34 22 * * *'
 
   workflow_dispatch:
 
