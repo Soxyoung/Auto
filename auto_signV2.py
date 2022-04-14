@@ -89,7 +89,7 @@ def sendSeverJ(sendKey, title, content):
         if (content.find("duiba") < 0):
             print(content)
             return
-        api = "https://sc.ftqq.com/" + sendKey + ".send"
+        api = "https://sctapi.ftqq.com/" + sendKey + ".send"
         data = {
             "text": title,
             "desp": content
