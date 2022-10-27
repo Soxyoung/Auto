@@ -46,4 +46,4 @@ jobs:
           echo "倒计时 $[${random_time}-$i] 分钟"
           sleep 1m
           done
-          python auto_sign.py ${{ secrets.ATPAUTHTOKEN }} ${{ secrets.MOBILE }}  ${{ secrets.USERID}}  ${{ secrets.USERSIG}} ${{ secrets.ACW_TC}} ${{ secrets.CX_SIGN}} ${{ secrets.SIGN_7207}} ${{ secrets.SIGN_8291}} ${{ secrets.YH_MEMBERID}} ${{ secrets.YH_ACCESS_TOKEN}} ${{ secrets.YH_DEVICEID}} ${{ secrets.YH_SIGN}} ${{ secrets.SIGN_7206}} ${{ secrets.SIGN_8958}} ${{ secrets.SIGN_2695}} ${{ secrets.SIGN_0883}}
+          python auto_signV2.py ${{ secrets.USER }} ${{ secrets.PWD }}  ${{ secrets.KEY}}
