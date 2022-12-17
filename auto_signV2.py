@@ -243,7 +243,7 @@ if __name__ == '__main__':
     print(beijing_now, beijing_now.tzname())
     print(beijing_now.strftime('%Y-%m-%d %H:%M:%S.%f'))
 
-    smzdm()
+#     smzdm()
     
     userlist = sys.argv[1]
     pwd = sys.argv[2]
